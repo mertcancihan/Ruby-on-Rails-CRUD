@@ -1,0 +1,7 @@
+<h3>Ürün Düzenle</h3>
+<%= form_with model: @product do |form| %>
+  <p>Ürün Adı: <%= form.text_field :name %></p>
+  <p>Ürün Modeli: <%= form.text_field :model %></p>
+
+  <%= form.submit %>
+<% end %>

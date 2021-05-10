@@ -1,0 +1,16 @@
+<h1>Marka: <%= @brand.name %></h1>
+<%= link_to 'Marka Düzenle', edit_brand_path(@brand) %>
+<p><b>Adres:</b> <%= @brand.address %></p>
+<p><b>Telefon:</b> <%= @brand.phone %></p>
+
+
+<h2>Markanın Ürünleri</h2>
+<ul>
+  <% @brand.products.each do |product| %>
+  <li><%= link_to product.name, product_path(product) %></li>
+  <% end %>
+</ul>
+<br>
+<p><%= link_to 'Yeni Ürün Oluştur', new_product_path %></p><br>
+<p><%= link_to 'Markayı Sil', @brand, method: 'delete', data: { confirm: 'Emin misin?' }%></p><br>
+<p><%= link_to 'Tüm Markaları Görüntüle', brands_path %></p>

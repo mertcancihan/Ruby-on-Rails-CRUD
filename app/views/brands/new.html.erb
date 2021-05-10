@@ -1,0 +1,8 @@
+<h3>Yeni Marka Ekle</h3>
+<%= form_with model: @brand do |form| %>
+  <p>Marka Adı: <%= form.text_field :name %></p>
+  <p>Adres: <%= form.text_field :address %></p>
+  <p>Telefon: <%= form.text_field :phone %></p>
+
+  <%= form.submit %>
+<% end %>

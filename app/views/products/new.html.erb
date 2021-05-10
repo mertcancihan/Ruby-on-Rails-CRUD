@@ -1,0 +1,9 @@
+<h3>Yeni Ürün Ekle</h3>
+<%= form_with model: @product do |form| %>
+  <p>Ürün Adı: <%= form.text_field :name %></p>
+  <p>Ürün Modeli: <%= form.text_field :model %></p>
+  
+  <p>Brand: <%= form.select :Brand_id, Brand.all.map { |brand| [ brand.name, brand.id ] } %></p>
+
+  <%= form.submit %>
+<% end %>

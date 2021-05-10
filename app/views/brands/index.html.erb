@@ -1,0 +1,11 @@
+<h1>Markalar</h1>
+
+<ul>
+  <% @brands.each do |brand| %>
+    <li>
+      <%= link_to brand.name, brand%>
+    </li>
+  <% end %>
+</ul>
+
+<div><%= link_to 'Yeni Marka Oluştur', new_brand_path %></div>

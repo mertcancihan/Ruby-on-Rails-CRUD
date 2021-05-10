@@ -1,0 +1,9 @@
+<h1><%= @product.name %></h1>
+<%= link_to 'Ürünü Düzenle', edit_product_path(@product) %>
+<p><b>Ürün Adı:</b> <%= @product.name %></p>
+<p><b>Ürün Modeli:</b> <%= @product.model %></p>
+
+<h4>Brand: <%= link_to @product.Brand.name, brand_path(@product.Brand) %></h4>
+
+<p><%= link_to 'Ürünü Sil', @product, method: 'delete', data: { confirm: 'Emin misin?' }%></p>
+<p><%= link_to 'Tüm Ürünleri Görüntüle', products_path %></p>
