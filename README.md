@@ -1,24 +1,7 @@
-# README
+# Ruby on Rails CRUD
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bu proje birbiri ile ilişkili markalar ve ürünlerin bilgilerini tutan bir geliştirmedir.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Projeyi bilgisayarınıza indirip RakeFile dosyası ile aynı dizine gelin.
+* "rails server" komutunu çalıştırın
+* Tarayıcınızda http://127.0.0.1:3000/ adresine gidin ve projeyi çalıştırın.
